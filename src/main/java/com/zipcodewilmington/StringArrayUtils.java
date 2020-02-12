@@ -201,7 +201,6 @@ public class StringArrayUtils {
             correctArray[i] = arrayWithoutDupes[i];
         }
 
-        System.out.println(Arrays.deepToString(correctArray));
         return correctArray;
     }
 
@@ -210,6 +209,8 @@ public class StringArrayUtils {
      * @return array of Strings with each consecutive duplicate occurrence concatenated as a single string in an array of Strings
      */ // TODO
     public static String[] packConsecutiveDuplicates(String[] array) {
+        String[] packedDupes = new String[1];
+
         return null;
     }
 }
