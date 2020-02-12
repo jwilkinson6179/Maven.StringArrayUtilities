@@ -215,20 +215,15 @@ public class StringArrayUtils {
 
         for(int i = 1; i < array.length; i++)
         {
-            if(array[i].equals(packedDupes[packedDupes.length - 1].substring(0, 1)))
-            {
+            if(array[i].equals(packedDupes[packedDupes.length - 1].substring(0, 1))) {
                 packedDupes[packedDupes.length - 1] += array[i];
-                i++;
             }
             else
             {
-                System.out.println("New array");
                 packedDupes = pushToStringArray(packedDupes, array[i]);
-                System.out.println(packedDupes[packedDupes.length - 1]);
             }
         }
 
-        System.out.println(Arrays.deepToString(packedDupes));
         return packedDupes;
     }
 
